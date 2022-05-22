@@ -50,11 +50,11 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.5, )"
             },
             "NLog": {
               "target": "Package",
-              "version": "[4.7.15, )"
+              "version": "[5.0.0, )"
             },
             "NLog.Config": {
               "target": "Package",
@@ -62,7 +62,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.3.0, )"
+              "version": "[6.3.1, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
