@@ -72,7 +72,7 @@ namespace MyFirstWeb.Controllers
         public IActionResult ProcessCreate(ProductModel product)
         {
             MyLogger.GetInstance().Info($"{product.Name} has been added!");
-            var newId = products.Insert(product);
+
             return View("ShowProductDetail", product);
         }
 
