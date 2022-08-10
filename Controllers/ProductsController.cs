@@ -73,6 +73,9 @@ namespace MyFirstWeb.Controllers
         {
             MyLogger.GetInstance().Info($"{product.Name} has been added!");
 
+            var newId = products.Insert(product);
+            product.Id = products.ProudctCount();
+            
             return View("ShowProductDetail", product);
         }
 

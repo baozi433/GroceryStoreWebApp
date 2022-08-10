@@ -9,17 +9,10 @@ namespace MyFirstWeb.Controllers
     [Route("api/")]
     public class ProductsControllerAPI : ControllerBase
     {
-        //ProductsDAO productsDAO;
-
-        //public ProductsControllerAPI()
-        //{
-        //    productsDAO = new ProductsDAO();
-        //}
-
-        private readonly ProductsDAO productsDAO;
-        public ProductsControllerAPI(ProductsDAO _productsDAO)
+        ProductsDAO productsDAO;
+        public ProductsControllerAPI()
         {
-            productsDAO = _productsDAO;
+            productsDAO = new ProductsDAO();
         }
 
         [HttpGet]

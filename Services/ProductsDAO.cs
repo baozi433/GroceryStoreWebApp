@@ -5,7 +5,8 @@ namespace MyFirstWeb.Services
 {
     public class ProductsDAO : IProductService
     {
-        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TestDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public HardCodeSampleDataRepository hardCodeSampleData = new HardCodeSampleDataRepository();
+        string connectionString = @"Data Source=YUANJIE-WU\SQLEXPRESS;Initial Catalog=LocalDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public int Delete(ProductModel product)
         {
             int newIdNumber = -1;
@@ -28,6 +29,14 @@ namespace MyFirstWeb.Services
             }
         }
 
+        public List<ProductModel> GetAllProductsHardCode()
+        {
+            List<ProductModel> foundProducts = new List<ProductModel>();
+            foundProducts = hardCodeSampleData.GetAllProducts();
+
+            return foundProducts;
+        }
+
         public List<ProductModel> GetAllProducts()
         {
             List<ProductModel> foundProducts = new List<ProductModel>();
@@ -39,10 +48,10 @@ namespace MyFirstWeb.Services
                 {
                     sqlConnection.Open();
                     SqlDataReader reader = command.ExecuteReader();
-                    while(reader.Read())
+                    while (reader.Read())
                     {
-                        foundProducts.Add(new ProductModel { Id = (int)reader["Id"], Name = (string)reader["Name"], Price = (decimal)reader["Price"], Description = (string)reader["Description"]});
-                    }         
+                        foundProducts.Add(new ProductModel { Id = (int)reader["Id"], Name = (string)reader["Name"], Price = (decimal)reader["Price"], Description = (string)reader["Description"] });
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -50,6 +59,8 @@ namespace MyFirstWeb.Services
                 }
                 return foundProducts;
             }
+
+            
         }
 
         public List<ProductModel> SearchProducts(string searchTerm)
@@ -149,6 +160,26 @@ namespace MyFirstWeb.Services
                     Console.WriteLine(ex.Message);
                 }
                 return newIdNumber;
+            }
+        }
+
+        public int ProudctCount()
+        {
+            int count = 0;
+            string sqlStatement = "SELECT COUNT(*) FROM dbo.Products";
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(sqlStatement, sqlConnection);
+                try
+                {
+                    sqlConnection.Open();
+                    count = Convert.ToInt32(command.ExecuteScalar());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                return count;
             }
         }
     }

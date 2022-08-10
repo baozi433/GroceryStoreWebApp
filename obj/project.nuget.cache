@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "35/B8g3iwyZ/wdBnz9xUmmlwJ/bECM9z7wmhQb5Hsn+zHVPqBgi2rJ7clx3QpWclpOhFSAa6pEMjZjglJv+StA==",
+  "dgSpecHash": "7Cv/pk5Dzg6Z2NuiMtTCo432GWQHgIobgGXm16E7eqs+VmBUspLpOor1v2cb9HKE4Ptmk//AKeLZ6ExVC2YFhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yuanj\\source\\repos\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj",
+  "projectFilePath": "C:\\Users\\yuanj\\Documents\\Projects\\.NET\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yuanj\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\yuanj\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
@@ -176,7 +176,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         "net6.0"

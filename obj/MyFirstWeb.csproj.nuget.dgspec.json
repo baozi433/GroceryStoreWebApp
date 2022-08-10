@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yuanj\\source\\repos\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj": {}
+    "C:\\Users\\yuanj\\Documents\\Projects\\.NET\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yuanj\\source\\repos\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj": {
+    "C:\\Users\\yuanj\\Documents\\Projects\\.NET\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yuanj\\source\\repos\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj",
+        "projectUniqueName": "C:\\Users\\yuanj\\Documents\\Projects\\.NET\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj",
         "projectName": "MyFirstWeb",
-        "projectPath": "C:\\Users\\yuanj\\source\\repos\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj",
+        "projectPath": "C:\\Users\\yuanj\\Documents\\Projects\\.NET\\MyFirstWebApp\\MyFirstWeb\\MyFirstWeb.csproj",
         "packagesPath": "C:\\Users\\yuanj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yuanj\\source\\repos\\MyFirstWebApp\\MyFirstWeb\\obj\\",
+        "outputPath": "C:\\Users\\yuanj\\Documents\\Projects\\.NET\\MyFirstWebApp\\MyFirstWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yuanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,7 +75,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -87,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

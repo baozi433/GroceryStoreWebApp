@@ -10,6 +10,7 @@ namespace MyFirstWeb.Services
         {
             throw new NotImplementedException();
         }
+        //temp
         public List<ProductModel> GetAllProducts()
         {
             if(productslist.Count == 0)
