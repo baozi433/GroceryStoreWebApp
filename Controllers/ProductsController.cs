@@ -29,7 +29,9 @@ namespace MyFirstWeb.Controllers
         {
             MyLogger.GetInstance().Info($"You just searched {searchTerm}."); // log to the file
             List<ProductModel> productsList = products.SearchProducts(searchTerm);
-            return View("index", productsList);
+            if(productsList.Count > 0) { return View("index", productsList); }
+            return View("No_results");
+            
         }
 
         public IActionResult SearchForm(string searchTerm)
